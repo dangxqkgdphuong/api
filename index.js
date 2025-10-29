@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 app.get("/conf", (req, res) => {
-            res.json({e:1,u:'https://google.com/'}); 
+            res.json({e:0,u:'https://google.com/'}); 
 
     // if(process.env.MODE == 1){
     //     res.json({e:1,u:'https://google.com/'}); 
