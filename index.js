@@ -13,11 +13,13 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 app.get("/conf", (req, res) => {
-    if(process.env.MODE == 1){
-        res.json({e:1,u:'https://google.com/'}); 
-    }else{
-        res.json({e:0,u:'https://google.com/'}); 
-    }
+            res.json({e:1,u:'https://google.com/'}); 
+
+    // if(process.env.MODE == 1){
+    //     res.json({e:1,u:'https://google.com/'}); 
+    // }else{
+    //     res.json({e:0,u:'https://google.com/'}); 
+    // }
 });
 app.listen(5000, () => {
   console.log("Running on port 5000!");
